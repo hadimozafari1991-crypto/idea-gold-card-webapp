@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کارت طلایی ایده برتر</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- فونت ایران‌سنس -->
-    <link href="https://fonts.cdnfonts.com/css/iransans" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>کارت طلایی ایده برتر</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>🎫 کارت طلایی ایده برتر</h1>
+  <h1>ثبت خرید کارت طلایی</h1>
+  <form id="purchaseForm">
+    <input type="text" id="uid" placeholder="UID کاربر" required />
+    <input type="text" id="name" placeholder="نام مشتری" required />
+    <input type="number" id="amount" placeholder="مبلغ خرید" required />
+    <button type="submit">ثبت خرید</button>
+  </form>
+  <div id="result"></div>
 
-        <div class="card">
-            <label>کد سریال کارت (UID)</label>
-            <input type="text" id="uid" placeholder="مثال: A13F92B1">
-
-            <label>مبلغ خرید (تومان)</label>
-            <input type="number" id="amount" placeholder="مثال: 3500000">
-
-            <button onclick="sendData()">ثبت خرید</button>
-
-            <div id="result" class="result"></div>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
